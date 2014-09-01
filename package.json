@@ -1,0 +1,21 @@
+{
+  "name": "splittr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "js/bundle.js",
+  "devDependencies": {
+    "cjsxify": "^0.2.5",
+    "react": "^0.11.1",
+    "watchify": "^1.0.2"
+  },
+  "scripts": {
+    "start": "watchify -d ./js/app.coffee -o ./bundle.js -v"
+  },
+  "author": "Erik Hedberg <erik@hedberg.at>",
+  "license": "ISC",
+  "browserify": {
+    "transform": [
+      "cjsxify"
+    ]
+  }
+}
